@@ -1,0 +1,8 @@
+Yes, by default, Django signals are executed synchronously, as evidenced by the sequential log messages indicating the start and finish of both the view and the receiver.
+
+INFO:__main__:View started
+INFO:__main__:Receiver started
+INFO:__main__:Receiver finished
+INFO:__main__:View finished
+
+Total time taken: 5.003472328186035 seconds

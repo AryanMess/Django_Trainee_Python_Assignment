@@ -1,0 +1,4 @@
+The custom class rectangle when instantiated, outputs the below
+
+{'length': 10}
+{'width': 5}

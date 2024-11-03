@@ -1,0 +1,9 @@
+Yes, Django signals run in the same thread as the caller, as demonstrated by the matching thread IDs in log outputs.
+
+
+
+INFO:__main__:View running in thread: 15832
+INFO:__main__:Receiver running in thread: 15832
+
+Signal sent
+

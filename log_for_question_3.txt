@@ -1,0 +1,17 @@
+Yes, by default, Django signals run in the same database transaction as the calling function. This means that if an error occurs during the execution of a signal, the effects of the signal can be rolled back if the transaction is rolled back.
+
+To demonstrate this, we can create a simple Django application that includes an Item model and a Log model. When an Item is saved, a signal will log the action. We will also write a test case to confirm that the signal operates within the same transaction as the creation of the Item.
+
+
+The below log
+
+
+
+
+Found 1 test(s).
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+Starting test for signal transaction behavior.
+Log entry created: Item "Test Item" created.
+Log entry count before rollback: 1
+Log entry count after rollback: 0
